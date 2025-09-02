@@ -182,7 +182,6 @@ class MainLayout(html.Div):
                     style={
                         "flex": "1",
                         "overflow": "hidden",
-                        "background": "#ffffff",
                     },
                 ),
                 # Generic input area
@@ -244,7 +243,6 @@ class MainLayout(html.Div):
                     ],
                     style={
                         "padding": "1rem",
-                        "background": "#ffffff",
                     },
                 ),
                 # Hidden div to trigger send on Cmd+Enter
@@ -255,7 +253,6 @@ class MainLayout(html.Div):
                 "display": "flex",
                 "flexDirection": "column",
                 "fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif",
-                "background": "#ffffff",
             },
         )
 
