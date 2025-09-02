@@ -1,4 +1,3 @@
-import dash_bootstrap_components as dbc
 from dash import MATCH, Input, Output, callback, html, ctx
 
 from zendo.components import LoginUserAIO, NavbarAIO, RegisterUserAIO

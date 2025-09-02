@@ -11,7 +11,7 @@ from dash import MATCH, Input, Output, State, callback, dcc, html, no_update
 import dash_bootstrap_components as dbc
 
 
-from ..auth import authenticate_user, login_user
+from zendo.services.auth import authenticate_user, login_user
 
 
 class AuthStateAIO(dcc.Store):

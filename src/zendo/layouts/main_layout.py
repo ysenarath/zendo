@@ -18,7 +18,7 @@ from dash import (
     html,
 )
 
-from zendo import auth
+from zendo.services import auth
 from zendo.services.applet_state import (
     create_applet,
     get_applet,

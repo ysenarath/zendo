@@ -10,7 +10,7 @@ import uuid
 import dash_bootstrap_components as dbc
 from dash import MATCH, Input, Output, State, callback, html, no_update
 
-from zendo.auth import current_user, logout_user
+from zendo.services.auth import current_user, logout_user
 from zendo.components.login import AuthStateAIO
 from zendo.config import appname
 

@@ -6,7 +6,7 @@ from flask_login import (
     logout_user,
 )
 
-from .models import User, db
+from zendo.models import User, db
 
 __all__ = [
     "login_manager",

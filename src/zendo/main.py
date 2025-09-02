@@ -14,7 +14,7 @@ def cli():
 
 @cli.command()
 @click.option("--port", default=8000, help="Port to run the application on.")
-def start(port: int):
+def server(port: int):
     """Start the application."""
     while True:
         try:

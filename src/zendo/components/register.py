@@ -11,7 +11,7 @@ import uuid
 from dash import MATCH, Input, Output, State, callback, dcc, html, no_update
 import dash_bootstrap_components as dbc
 
-from ..auth import register_user
+from zendo.services.auth import register_user
 
 EMAIL_REGEX_PATTERN = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
 EMAIL_REGEX_PATTERN_ERROR = "Invalid email format. Please enter a valid email address."

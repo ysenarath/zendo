@@ -11,8 +11,8 @@ import dash
 import dash_bootstrap_components as dbc
 from dash import Input, Output, callback, html
 
-from zendo import auth
-from zendo.auth import login_manager
+from zendo.services import auth
+from zendo.services.auth import login_manager
 from zendo.components import AuthStateAIO, NavbarAIO
 from zendo.constants import APP_ID, APP_MAIN_CONTENT_ID
 from zendo.layouts import AuthLayout, MainLayout
