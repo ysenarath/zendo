@@ -295,32 +295,20 @@ class MainLayout(html.Div):
                 "No messages yet. Start chatting!",
                 style={"padding": "1rem", "textAlign": "center"},
             )
-        if app_state["mode"] == "chat":
+        elif app_state["mode"] == "chat":
             # Render chat history
             chats_div = html.Div(
                 [
                     html.Div(
-                        [
-                            html.Div(
-                                f"{msg['role']}: {msg['content']}",
-                                className="chat-message",
-                                style={
-                                    "marginBottom": "0.5rem",
-                                    "padding": "0.5rem",
-                                    "borderRadius": "8px",
-                                    "backgroundColor": "#f1f1f1",
-                                },
-                            )
-                            for msg in history
-                        ],
+                        f"{msg['role']}: {msg['content']}",
+                        className="chat-message",
                         style={
-                            "padding": "1rem",
-                            "overflowY": "auto",
-                            "height": "calc(100vh - 150px)",
+                            "backgroundColor": "#f1f1f1",
                         },
                     )
+                    for msg in history
                 ],
-                style={"padding": "1rem"},
+                className="chats-container p-3 h-100 d-flex flex-column justify-content-end gap-2",
             )
         return chats_div
 
