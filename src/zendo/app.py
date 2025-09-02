@@ -100,7 +100,6 @@ def create_layout():
             "display": "flex",
             "flexDirection": "column",
             "fontDamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif",
-            "background": "#ffffff",
         },
     )
 
