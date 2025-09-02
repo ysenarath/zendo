@@ -98,9 +98,7 @@ class NavbarAIO(dbc.Navbar):
         auth_actions=None,
         user_actions=None,
         navbar_props=None,
-        show_auth_section=True,
         fluid=False,
-        **div_props,
     ):
         if aio_id is None:
             aio_id = str(uuid.uuid4())
@@ -116,11 +114,7 @@ class NavbarAIO(dbc.Navbar):
             user_actions = []
 
         # Set default navbar properties for Bootstrap compatibility
-        default_navbar_props = {
-            "color": "light",
-            "dark": False,
-            "expand": "lg",
-        }
+        default_navbar_props = {}
         # Merge user-supplied properties with defaults
         navbar_props = {
             **default_navbar_props,
